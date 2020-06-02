@@ -8,5 +8,4 @@ FROM alpine:latest
 RUN apk --no-cache add ca-certificates
 WORKDIR /app
 COPY --from=builder /app/ ./
-EXPOSE 8087 8088
 CMD ["./subscriber", "--config=./init/config.yaml"]
