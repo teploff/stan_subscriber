@@ -1,0 +1,5 @@
+stan:
+  cluster_id: "kso_cluster"
+  client_id: "test_stan_client"
+  addr: "nats://192.168.10.93:4222"
+  subject: "measurements"

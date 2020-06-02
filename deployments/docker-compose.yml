@@ -1,0 +1,11 @@
+version: '3.7'
+
+# sudo docker-compose up -d --build
+
+services:
+  calendar:
+    build:
+      context: ..
+      dockerfile: deployments/subscriber/Dockerfile
+    image: stan_subscriber:latest
+    container_name: stan_subscriber
