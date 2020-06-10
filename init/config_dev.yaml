@@ -1,0 +1,5 @@
+stan:
+  cluster_id: "kso_cluster"
+  client_id: "publisher_stan_client"
+  addr: "nats://localhost:4222"
+  subject: "measurements"
